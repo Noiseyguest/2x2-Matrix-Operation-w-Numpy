@@ -15,7 +15,7 @@ while flag == False:
         m1.append(row)
 
     arr1 = np.array(m1)
-    #we used .split() to create sub-lists and subsequently converted them to interger using 'map' then we used np.array which converts the values of rows 1 and rows 2, which are both sublists, into array form
+    #we used .split() to create sub-lists and subsequently converted them to integer using 'map' then we used np.array which converts the values of rows 1 and rows 2, which are both sublists, into array form
     for i in range(1,3):
         row = list(map(int, input("Enter two vale for row %d of 2nd matrix (two space-separated values): " %i).split()))
         if len(row) != 2:
